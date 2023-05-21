@@ -1,0 +1,133 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper{
+    background-color: #1C1B21;
+    width: 100%;
+    height: 100vh;
+    &_container{
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: relative;
+        height: 100%;
+        width: 900px;
+        &_chatBlock{
+            width: 100%;
+            max-height: 900px;
+            border: 0.5px solid rgba(141, 141, 141, 0.317);
+            background-color: #222E35;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: relative;
+            display: block;
+            &_nav{
+                width: 100%;
+                height: 60px;
+                background-color: #202c33;
+                display: flex;
+                align-items: center;
+                border-bottom: 0.5px solid rgba(0, 0, 0, 0.594) ;
+                &_input{
+                    margin-left: 10px;
+                    width: 180px;
+                    height: 25px;
+                    font-size: 20px;
+                    border: 0.5px solid rgba(141, 141, 141, 0.317);
+                    text-align: center;
+                    color: rgb(181, 181, 181);
+                    background-color: #2A3942;
+                    border-radius: 5px;
+                }
+                button{
+                    margin-left: 10px;
+                    border: 0.5px solid rgba(141, 141, 141, 0.317);
+                    width: 140px;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    height: 35px;
+                    color: rgb(181, 181, 181);
+                    background-color: #2A3942;
+                }
+            }
+            &_chatField{
+                width: 100%;
+                min-height: 62px;
+                max-height: 200px;
+                position: relative;
+                border-top:  0.5px solid rgba(0, 0, 0, 0.594) ;
+                background-color: #202c33;
+                &_blockError{
+                    width: 100%;
+                    justify-content: center;
+                    display: flex;
+                    height: 20px;
+                    &_error{
+                        color: rgb(222, 86, 86);
+                    }
+                }
+                &_blockInput{
+                    position: relative;
+                    display: flex;
+                    margin: auto    ;
+                    height: 100%;
+                    width: 600px;
+                    &_input{
+                        margin: auto;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        padding: 5px 10px 5px 10px;
+                        width: 600px;
+                        color: rgb(181, 181, 181);
+                        min-height: 22px;
+                        max-height: 120px;
+                        display: block;
+                        font-size: 20px;
+                        background-color: #2A3942;
+                        border-radius: 10px;
+                        outline: none !important;
+                        border: none;
+                        overflow-y: scroll;
+                    }
+                }
+                &_blockButton{
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    right: 9%;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    &_buttonC{
+                        display: block;
+                        position: relative;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #2A3942;
+                        border: 0.5px solid rgb(92, 92, 92);
+                        border-radius: 50%;
+                        &_triangle{
+                            margin: auto;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 12.5px 0 12.5px 20px;
+                            border-color: transparent transparent transparent #1da904;
+                        }
+                        &_backActiv{
+                            margin: auto;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 12.5px 0 12.5px 20px;
+                            border-color: transparent transparent transparent #5d6a5a;
+                        }
+                    }
+                }
+            }
+        
+        }
+
+    }
+}

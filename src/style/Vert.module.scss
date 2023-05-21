@@ -1,0 +1,67 @@
+
+
+
+.vertBlock{
+    width: 600px;
+    min-height: 250px;
+    background-color: #222E35 ;
+    border: 0.5px solid rgba(141, 141, 141, 0.317);
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    &_blockError{
+        margin-top: 20px;
+        position: relative;
+        width: 500px;
+        height: 60px;
+        border: 0.5px solid rgb(250, 156, 156);
+        background-color: #2A3942;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        border-radius: 5px;
+        justify-content: center;
+        span{
+            font-size: 18px;
+            color: rgb(255, 210, 182);
+        }
+    }
+    &_blockInput{
+        position: relative;
+        top: 20%;
+        margin: auto;
+        width: 550px;
+        height: 150px;
+        display: table;
+        vertical-align: middle;
+        &_input{
+            margin-top: 20px;
+            background-color: #2A3942;
+            border-radius: 5px;
+            font-size: 18px;
+            color: rgb(181, 181, 181);
+            text-align: center;
+            justify-content: center;
+            height: 25px;
+            width: 100%;
+        }
+        &_buttonToken{
+            position: relative;
+            display: flex;
+            width: 120px;
+            margin-top: 25px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            justify-content: center;
+            height: 28px;
+            font-size: 20px;
+            color: #2A3942 ;
+            background-color:  rgb(181, 181, 181);
+            border-radius: 5px;
+            border: 0.5px solid rgba(141, 141, 141, 0.317);
+        }
+    }
+}
